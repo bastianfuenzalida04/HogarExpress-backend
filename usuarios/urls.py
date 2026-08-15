@@ -7,6 +7,7 @@ from .views import (
     UsuarioActualAPIView,
     DireccionesAPIView,
     DireccionDetailAPIView,
+    CSRFTokenAPIView,
 )
 
 
@@ -45,5 +46,11 @@ urlpatterns = [
         "direcciones/<int:pk>/",
         DireccionDetailAPIView.as_view(),
         name="direccion-detail",
+    ),
+
+    path(
+        "csrf/",
+        CSRFTokenAPIView.as_view(),
+        name="csrf",
     ),
 ]

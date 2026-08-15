@@ -1,5 +1,6 @@
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
+from django.middleware.csrf import get_token
 
 from rest_framework import status
 from rest_framework.permissions import AllowAny, IsAuthenticated
@@ -19,6 +20,10 @@ from .serializers import (
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.utils.decorators import method_decorator
 
+
+# ============================================================
+# REGISTRO
+# ============================================================
 
 class RegistroAPIView(APIView):
 
@@ -47,6 +52,33 @@ class RegistroAPIView(APIView):
             status=status.HTTP_400_BAD_REQUEST,
         )
 
+
+# ============================================================
+# CSRF
+# ============================================================
+
+@method_decorator(
+    ensure_csrf_cookie,
+    name="dispatch"
+)
+class CSRFTokenAPIView(APIView):
+
+    permission_classes = [AllowAny]
+
+    def get(self, request):
+
+        token = get_token(request)
+
+        return Response(
+            {
+                "csrfToken": token
+            }
+        )
+
+
+# ============================================================
+# LOGIN
+# ============================================================
 
 @method_decorator(
     ensure_csrf_cookie,
@@ -92,15 +124,15 @@ class LoginAPIView(APIView):
                 status=status.HTTP_401_UNAUTHORIZED,
             )
 
-        # ==================================================
-        # GUARDAR LA SESIÓN DEL INVITADO
-        # ==================================================
+        # ====================================================
+        # GUARDAR SESIÓN DEL INVITADO
+        # ====================================================
 
         session_key = request.session.session_key
 
-        # ==================================================
+        # ====================================================
         # TRANSFERIR CARRITO DE INVITADO
-        # ==================================================
+        # ====================================================
 
         if session_key:
 
@@ -114,17 +146,11 @@ class LoginAPIView(APIView):
 
             if carrito_invitado:
 
-                # Obtener o crear el carrito
-                # perteneciente al usuario.
                 carrito_usuario, created = (
                     Carrito.objects.get_or_create(
                         usuario=user
                     )
                 )
-
-                # ------------------------------------------
-                # Pasar cada producto al carrito del usuario
-                # ------------------------------------------
 
                 for item_invitado in (
                     carrito_invitado.items.select_related(
@@ -149,7 +175,6 @@ class LoginAPIView(APIView):
                             + item_invitado.cantidad
                         )
 
-                        # No superar el stock disponible.
                         nueva_cantidad = min(
                             nueva_cantidad,
                             item_invitado.producto.stock
@@ -161,15 +186,11 @@ class LoginAPIView(APIView):
 
                         item_usuario.save()
 
-                # ------------------------------------------
-                # Eliminar el carrito de invitado
-                # ------------------------------------------
-
                 carrito_invitado.delete()
 
-        # ==================================================
+        # ====================================================
         # INICIAR SESIÓN
-        # ==================================================
+        # ====================================================
 
         login(
             request,
@@ -184,6 +205,10 @@ class LoginAPIView(APIView):
             status=status.HTTP_200_OK,
         )
 
+
+# ============================================================
+# LOGOUT
+# ============================================================
 
 class LogoutAPIView(APIView):
 
@@ -201,6 +226,10 @@ class LogoutAPIView(APIView):
         )
 
 
+# ============================================================
+# USUARIO ACTUAL
+# ============================================================
+
 class UsuarioActualAPIView(APIView):
 
     permission_classes = [IsAuthenticated]
@@ -213,6 +242,10 @@ class UsuarioActualAPIView(APIView):
             ).data
         )
 
+
+# ============================================================
+# DIRECCIONES
+# ============================================================
 
 class DireccionesAPIView(APIView):
 
@@ -257,6 +290,10 @@ class DireccionesAPIView(APIView):
             status=status.HTTP_400_BAD_REQUEST,
         )
 
+
+# ============================================================
+# DETALLE DE DIRECCIÓN
+# ============================================================
 
 class DireccionDetailAPIView(APIView):
 
