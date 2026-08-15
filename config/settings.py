@@ -1,5 +1,8 @@
 from pathlib import Path
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -8,8 +11,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SEGURIDAD
 # ============================================================
 
-SECRET_KEY = os.environ.get(
-    "SECRET_KEY",
+SECRET_KEY = os.getenv(
+    "DJANGO_SECRET_KEY",
     "django-insecure-hogarexpress-development-key"
 )
 
@@ -53,6 +56,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 
     "django.contrib.sessions.middleware.SessionMiddleware",
 
@@ -151,6 +156,7 @@ USE_TZ = True
 # ============================================================
 
 STATIC_URL = "static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 
 # ============================================================
@@ -224,6 +230,6 @@ EMAIL_HOST_USER = "befc15574@gmail.com"
 
 # IMPORTANTE:
 # Utiliza una contraseña de aplicación de Gmail.
-EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", "")
 
 DEFAULT_FROM_EMAIL = "HogarExpress <befc15574@gmail.com>"
