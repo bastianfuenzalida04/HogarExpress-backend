@@ -1,297 +1,297 @@
-[
-{
-  "model": "productos.categoria",
-  "pk": 1,
-  "fields": {
-    "nombre": "Limpieza",
-    "descripcion": "",
-    "imagen": "",
-    "activa": true,
-    "fecha_creacion": "2026-08-14T05:31:32.431Z"
-  }
-},
-{
-  "model": "productos.categoria",
-  "pk": 2,
-  "fields": {
-    "nombre": "Higiene",
-    "descripcion": "",
-    "imagen": "",
-    "activa": true,
-    "fecha_creacion": "2026-08-14T05:31:42.616Z"
-  }
-},
-{
-  "model": "productos.categoria",
-  "pk": 3,
-  "fields": {
-    "nombre": "Despensa",
-    "descripcion": "",
-    "imagen": "",
-    "activa": true,
-    "fecha_creacion": "2026-08-14T05:31:48.429Z"
-  }
-},
-{
-  "model": "productos.categoria",
-  "pk": 4,
-  "fields": {
-    "nombre": "Bebidas y snacks",
-    "descripcion": "",
-    "imagen": "",
-    "activa": true,
-    "fecha_creacion": "2026-08-14T05:31:53.895Z"
-  }
-},
-{
-  "model": "productos.categoria",
-  "pk": 5,
-  "fields": {
-    "nombre": "Hogar",
-    "descripcion": "",
-    "imagen": "",
-    "activa": true,
-    "fecha_creacion": "2026-08-14T05:31:58.904Z"
-  }
-},
-{
-  "model": "productos.producto",
-  "pk": 1,
-  "fields": {
-    "categoria": 1,
-    "nombre": "Detergente LÌquido 3L",
-    "descripcion": "Detergente lÌquido para lavado de ropa.",
-    "precio": "5990",
-    "stock": 25,
-    "imagen": "productos/detergente.avif",
-    "activo": true,
-    "destacado": true,
-    "fecha_creacion": "2026-08-14T05:34:19.024Z",
-    "fecha_actualizacion": "2026-08-15T03:58:27.751Z"
-  }
-},
-{
-  "model": "productos.producto",
-  "pk": 2,
-  "fields": {
-    "categoria": 1,
-    "nombre": "Lavalozas 750ml",
-    "descripcion": "Lavalozas lÌquido para limpieza de vajilla.",
-    "precio": "2490",
-    "stock": 30,
-    "imagen": "productos/lavalozas.jpg",
-    "activo": true,
-    "destacado": false,
-    "fecha_creacion": "2026-08-14T05:34:58.305Z",
-    "fecha_actualizacion": "2026-08-15T03:58:16.721Z"
-  }
-},
-{
-  "model": "productos.producto",
-  "pk": 3,
-  "fields": {
-    "categoria": 1,
-    "nombre": "Cloro 1L",
-    "descripcion": "Cloro lÌquido para limpieza y desinfecciÛn del hogar.",
-    "precio": "1990",
-    "stock": 35,
-    "imagen": "productos/cloro.png",
-    "activo": true,
-    "destacado": false,
-    "fecha_creacion": "2026-08-14T05:35:25.552Z",
-    "fecha_actualizacion": "2026-08-15T03:58:11.537Z"
-  }
-},
-{
-  "model": "productos.producto",
-  "pk": 4,
-  "fields": {
-    "categoria": 2,
-    "nombre": "Papel HigiÈnico 4 Rollos",
-    "descripcion": "Papel higiÈnico suave para uso diario.",
-    "precio": "2990",
-    "stock": 39,
-    "imagen": "productos/papel.webp",
-    "activo": true,
-    "destacado": true,
-    "fecha_creacion": "2026-08-14T05:35:53.937Z",
-    "fecha_actualizacion": "2026-08-15T03:58:06.082Z"
-  }
-},
-{
-  "model": "productos.producto",
-  "pk": 5,
-  "fields": {
-    "categoria": 2,
-    "nombre": "JabÛn LÌquido 500ml",
-    "descripcion": "JabÛn lÌquido para higiene de manos.",
-    "precio": "2490",
-    "stock": 25,
-    "imagen": "productos/jsbon.webp",
-    "activo": true,
-    "destacado": false,
-    "fecha_creacion": "2026-08-14T05:36:20.639Z",
-    "fecha_actualizacion": "2026-08-15T03:58:00.467Z"
-  }
-},
-{
-  "model": "productos.producto",
-  "pk": 6,
-  "fields": {
-    "categoria": 2,
-    "nombre": "Shampoo 750ml",
-    "descripcion": "Shampoo para limpieza y cuidado del cabello.",
-    "precio": "4490",
-    "stock": 20,
-    "imagen": "productos/w1500h1500fitcover.webp",
-    "activo": true,
-    "destacado": false,
-    "fecha_creacion": "2026-08-14T05:36:44.089Z",
-    "fecha_actualizacion": "2026-08-15T03:57:49.954Z"
-  }
-},
-{
-  "model": "productos.producto",
-  "pk": 7,
-  "fields": {
-    "categoria": 3,
-    "nombre": "Arroz 1kg",
-    "descripcion": "Arroz de grano largo para consumo familiar.",
-    "precio": "1790",
-    "stock": 50,
-    "imagen": "productos/960.webp",
-    "activo": true,
-    "destacado": true,
-    "fecha_creacion": "2026-08-14T17:22:01.546Z",
-    "fecha_actualizacion": "2026-08-15T03:57:39.058Z"
-  }
-},
-{
-  "model": "productos.producto",
-  "pk": 8,
-  "fields": {
-    "categoria": 3,
-    "nombre": "Fideos 400g",
-    "descripcion": "Fideos de trigo para preparaciones familiares.",
-    "precio": "990",
-    "stock": 59,
-    "imagen": "productos/fideoslucchettitallarin78400g-1.webp",
-    "activo": true,
-    "destacado": false,
-    "fecha_creacion": "2026-08-14T17:22:30.157Z",
-    "fecha_actualizacion": "2026-08-15T03:57:32.585Z"
-  }
-},
-{
-  "model": "productos.producto",
-  "pk": 9,
-  "fields": {
-    "categoria": 3,
-    "nombre": "CafÈ 170g",
-    "descripcion": "CafÈ instant·neo para consumo diario.",
-    "precio": "4990",
-    "stock": 26,
-    "imagen": "productos/Cafe-Nescafe-Tradicion-170-g.webp",
-    "activo": true,
-    "destacado": true,
-    "fecha_creacion": "2026-08-14T17:22:52.785Z",
-    "fecha_actualizacion": "2026-08-15T03:57:26.067Z"
-  }
-},
-{
-  "model": "productos.producto",
-  "pk": 10,
-  "fields": {
-    "categoria": 4,
-    "nombre": "Agua Mineral 1.5L",
-    "descripcion": "Agua mineral para consumo diario.",
-    "precio": "1190",
-    "stock": 3,
-    "imagen": "productos/agua_D3oRCVK.jpg",
-    "activo": true,
-    "destacado": false,
-    "fecha_creacion": "2026-08-14T17:23:29.785Z",
-    "fecha_actualizacion": "2026-08-15T03:44:59.018Z"
-  }
-},
-{
-  "model": "productos.producto",
-  "pk": 11,
-  "fields": {
-    "categoria": 4,
-    "nombre": "Jugo 1L",
-    "descripcion": "Jugo de fruta listo para consumir.",
-    "precio": "1990",
-    "stock": 27,
-    "imagen": "productos/jugo.png",
-    "activo": true,
-    "destacado": false,
-    "fecha_creacion": "2026-08-14T17:24:04.671Z",
-    "fecha_actualizacion": "2026-08-15T03:57:18.691Z"
-  }
-},
-{
-  "model": "productos.producto",
-  "pk": 12,
-  "fields": {
-    "categoria": 4,
-    "nombre": "Galletas 150g",
-    "descripcion": "Galletas dulces para acompaÒar tus comidas.",
-    "precio": "1490",
-    "stock": 33,
-    "imagen": "productos/GALLETA-KUKY-150-GR.webp",
-    "activo": true,
-    "destacado": true,
-    "fecha_creacion": "2026-08-14T17:24:22.944Z",
-    "fecha_actualizacion": "2026-08-15T03:53:26.893Z"
-  }
-},
-{
-  "model": "productos.producto",
-  "pk": 13,
-  "fields": {
-    "categoria": 5,
-    "nombre": "Pilas AA 4 unidades",
-    "descripcion": "Pack de pilas AA para dispositivos del hogar.",
-    "precio": "3490",
-    "stock": 1,
-    "imagen": "productos/pilas.jpg",
-    "activo": true,
-    "destacado": false,
-    "fecha_creacion": "2026-08-14T17:24:48.319Z",
-    "fecha_actualizacion": "2026-08-15T03:57:11.012Z"
-  }
-},
-{
-  "model": "productos.producto",
-  "pk": 14,
-  "fields": {
-    "categoria": 5,
-    "nombre": "Ampolleta LED 9W",
-    "descripcion": "Ampolleta LED de bajo consumo para el hogar.",
-    "precio": "2990",
-    "stock": 22,
-    "imagen": "productos/Ampolleta-LED-12_24-9w-luz-fria.png",
-    "activo": true,
-    "destacado": true,
-    "fecha_creacion": "2026-08-14T17:25:16.486Z",
-    "fecha_actualizacion": "2026-08-15T03:57:03.628Z"
-  }
-},
-{
-  "model": "productos.producto",
-  "pk": 15,
-  "fields": {
-    "categoria": 5,
-    "nombre": "Esponja Multiuso",
-    "descripcion": "Esponja multiuso para diferentes tareas del hogar.",
-    "precio": "1290",
-    "stock": 24,
-    "imagen": "productos/Virutex-Multiuso_kmapGFN.jpg",
-    "activo": true,
-    "destacado": false,
-    "fecha_creacion": "2026-08-14T17:25:34.654Z",
-    "fecha_actualizacion": "2026-08-15T03:47:21.753Z"
-  }
-}
-]
+[
+{
+  "model": "productos.categoria",
+  "pk": 1,
+  "fields": {
+    "nombre": "Limpieza",
+    "descripcion": "",
+    "imagen": "",
+    "activa": true,
+    "fecha_creacion": "2026-08-14T05:31:32.431Z"
+  }
+},
+{
+  "model": "productos.categoria",
+  "pk": 2,
+  "fields": {
+    "nombre": "Higiene",
+    "descripcion": "",
+    "imagen": "",
+    "activa": true,
+    "fecha_creacion": "2026-08-14T05:31:42.616Z"
+  }
+},
+{
+  "model": "productos.categoria",
+  "pk": 3,
+  "fields": {
+    "nombre": "Despensa",
+    "descripcion": "",
+    "imagen": "",
+    "activa": true,
+    "fecha_creacion": "2026-08-14T05:31:48.429Z"
+  }
+},
+{
+  "model": "productos.categoria",
+  "pk": 4,
+  "fields": {
+    "nombre": "Bebidas y snacks",
+    "descripcion": "",
+    "imagen": "",
+    "activa": true,
+    "fecha_creacion": "2026-08-14T05:31:53.895Z"
+  }
+},
+{
+  "model": "productos.categoria",
+  "pk": 5,
+  "fields": {
+    "nombre": "Hogar",
+    "descripcion": "",
+    "imagen": "",
+    "activa": true,
+    "fecha_creacion": "2026-08-14T05:31:58.904Z"
+  }
+},
+{
+  "model": "productos.producto",
+  "pk": 1,
+  "fields": {
+    "categoria": 1,
+    "nombre": "Detergente L√≠quido 3L",
+    "descripcion": "Detergente l√≠quido para lavado de ropa.",
+    "precio": "5990",
+    "stock": 25,
+    "imagen": "productos/detergente.avif",
+    "activo": true,
+    "destacado": true,
+    "fecha_creacion": "2026-08-14T05:34:19.024Z",
+    "fecha_actualizacion": "2026-08-15T03:58:27.751Z"
+  }
+},
+{
+  "model": "productos.producto",
+  "pk": 2,
+  "fields": {
+    "categoria": 1,
+    "nombre": "Lavalozas 750ml",
+    "descripcion": "Lavalozas l√≠quido para limpieza de vajilla.",
+    "precio": "2490",
+    "stock": 30,
+    "imagen": "productos/lavalozas.jpg",
+    "activo": true,
+    "destacado": false,
+    "fecha_creacion": "2026-08-14T05:34:58.305Z",
+    "fecha_actualizacion": "2026-08-15T03:58:16.721Z"
+  }
+},
+{
+  "model": "productos.producto",
+  "pk": 3,
+  "fields": {
+    "categoria": 1,
+    "nombre": "Cloro 1L",
+    "descripcion": "Cloro l√≠quido para limpieza y desinfecci√≥n del hogar.",
+    "precio": "1990",
+    "stock": 35,
+    "imagen": "productos/cloro.png",
+    "activo": true,
+    "destacado": false,
+    "fecha_creacion": "2026-08-14T05:35:25.552Z",
+    "fecha_actualizacion": "2026-08-15T03:58:11.537Z"
+  }
+},
+{
+  "model": "productos.producto",
+  "pk": 4,
+  "fields": {
+    "categoria": 2,
+    "nombre": "Papel Higi√©nico 4 Rollos",
+    "descripcion": "Papel higi√©nico suave para uso diario.",
+    "precio": "2990",
+    "stock": 39,
+    "imagen": "productos/papel.webp",
+    "activo": true,
+    "destacado": true,
+    "fecha_creacion": "2026-08-14T05:35:53.937Z",
+    "fecha_actualizacion": "2026-08-15T03:58:06.082Z"
+  }
+},
+{
+  "model": "productos.producto",
+  "pk": 5,
+  "fields": {
+    "categoria": 2,
+    "nombre": "Jab√≥n L√≠quido 500ml",
+    "descripcion": "Jab√≥n l√≠quido para higiene de manos.",
+    "precio": "2490",
+    "stock": 25,
+    "imagen": "productos/jsbon.webp",
+    "activo": true,
+    "destacado": false,
+    "fecha_creacion": "2026-08-14T05:36:20.639Z",
+    "fecha_actualizacion": "2026-08-15T03:58:00.467Z"
+  }
+},
+{
+  "model": "productos.producto",
+  "pk": 6,
+  "fields": {
+    "categoria": 2,
+    "nombre": "Shampoo 750ml",
+    "descripcion": "Shampoo para limpieza y cuidado del cabello.",
+    "precio": "4490",
+    "stock": 20,
+    "imagen": "productos/w1500h1500fitcover.webp",
+    "activo": true,
+    "destacado": false,
+    "fecha_creacion": "2026-08-14T05:36:44.089Z",
+    "fecha_actualizacion": "2026-08-15T03:57:49.954Z"
+  }
+},
+{
+  "model": "productos.producto",
+  "pk": 7,
+  "fields": {
+    "categoria": 3,
+    "nombre": "Arroz 1kg",
+    "descripcion": "Arroz de grano largo para consumo familiar.",
+    "precio": "1790",
+    "stock": 50,
+    "imagen": "productos/960.webp",
+    "activo": true,
+    "destacado": true,
+    "fecha_creacion": "2026-08-14T17:22:01.546Z",
+    "fecha_actualizacion": "2026-08-15T03:57:39.058Z"
+  }
+},
+{
+  "model": "productos.producto",
+  "pk": 8,
+  "fields": {
+    "categoria": 3,
+    "nombre": "Fideos 400g",
+    "descripcion": "Fideos de trigo para preparaciones familiares.",
+    "precio": "990",
+    "stock": 59,
+    "imagen": "productos/fideoslucchettitallarin78400g-1.webp",
+    "activo": true,
+    "destacado": false,
+    "fecha_creacion": "2026-08-14T17:22:30.157Z",
+    "fecha_actualizacion": "2026-08-15T03:57:32.585Z"
+  }
+},
+{
+  "model": "productos.producto",
+  "pk": 9,
+  "fields": {
+    "categoria": 3,
+    "nombre": "Caf√© 170g",
+    "descripcion": "Caf√© instant√°neo para consumo diario.",
+    "precio": "4990",
+    "stock": 26,
+    "imagen": "productos/Cafe-Nescafe-Tradicion-170-g.webp",
+    "activo": true,
+    "destacado": true,
+    "fecha_creacion": "2026-08-14T17:22:52.785Z",
+    "fecha_actualizacion": "2026-08-15T03:57:26.067Z"
+  }
+},
+{
+  "model": "productos.producto",
+  "pk": 10,
+  "fields": {
+    "categoria": 4,
+    "nombre": "Agua Mineral 1.5L",
+    "descripcion": "Agua mineral para consumo diario.",
+    "precio": "1190",
+    "stock": 3,
+    "imagen": "productos/agua_D3oRCVK.jpg",
+    "activo": true,
+    "destacado": false,
+    "fecha_creacion": "2026-08-14T17:23:29.785Z",
+    "fecha_actualizacion": "2026-08-15T03:44:59.018Z"
+  }
+},
+{
+  "model": "productos.producto",
+  "pk": 11,
+  "fields": {
+    "categoria": 4,
+    "nombre": "Jugo 1L",
+    "descripcion": "Jugo de fruta listo para consumir.",
+    "precio": "1990",
+    "stock": 27,
+    "imagen": "productos/jugo.png",
+    "activo": true,
+    "destacado": false,
+    "fecha_creacion": "2026-08-14T17:24:04.671Z",
+    "fecha_actualizacion": "2026-08-15T03:57:18.691Z"
+  }
+},
+{
+  "model": "productos.producto",
+  "pk": 12,
+  "fields": {
+    "categoria": 4,
+    "nombre": "Galletas 150g",
+    "descripcion": "Galletas dulces para acompa√±ar tus comidas.",
+    "precio": "1490",
+    "stock": 33,
+    "imagen": "productos/GALLETA-KUKY-150-GR.webp",
+    "activo": true,
+    "destacado": true,
+    "fecha_creacion": "2026-08-14T17:24:22.944Z",
+    "fecha_actualizacion": "2026-08-15T03:53:26.893Z"
+  }
+},
+{
+  "model": "productos.producto",
+  "pk": 13,
+  "fields": {
+    "categoria": 5,
+    "nombre": "Pilas AA 4 unidades",
+    "descripcion": "Pack de pilas AA para dispositivos del hogar.",
+    "precio": "3490",
+    "stock": 1,
+    "imagen": "productos/pilas.jpg",
+    "activo": true,
+    "destacado": false,
+    "fecha_creacion": "2026-08-14T17:24:48.319Z",
+    "fecha_actualizacion": "2026-08-15T03:57:11.012Z"
+  }
+},
+{
+  "model": "productos.producto",
+  "pk": 14,
+  "fields": {
+    "categoria": 5,
+    "nombre": "Ampolleta LED 9W",
+    "descripcion": "Ampolleta LED de bajo consumo para el hogar.",
+    "precio": "2990",
+    "stock": 22,
+    "imagen": "productos/Ampolleta-LED-12_24-9w-luz-fria.png",
+    "activo": true,
+    "destacado": true,
+    "fecha_creacion": "2026-08-14T17:25:16.486Z",
+    "fecha_actualizacion": "2026-08-15T03:57:03.628Z"
+  }
+},
+{
+  "model": "productos.producto",
+  "pk": 15,
+  "fields": {
+    "categoria": 5,
+    "nombre": "Esponja Multiuso",
+    "descripcion": "Esponja multiuso para diferentes tareas del hogar.",
+    "precio": "1290",
+    "stock": 24,
+    "imagen": "productos/Virutex-Multiuso_kmapGFN.jpg",
+    "activo": true,
+    "destacado": false,
+    "fecha_creacion": "2026-08-14T17:25:34.654Z",
+    "fecha_actualizacion": "2026-08-15T03:47:21.753Z"
+  }
+}
+]
