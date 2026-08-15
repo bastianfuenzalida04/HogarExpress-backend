@@ -211,10 +211,16 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:5173",
     "http://192.168.1.2:5173",
+    "https://hogarexpress-frontend.onrender.com",
 ]
 
 CSRF_COOKIE_HTTPONLY = False
 
+SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SAMESITE = "None"
+
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = "None"
 
 # ============================================================
 # CORREO ELECTRÓNICO - HOGAREXPRESS
